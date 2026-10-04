@@ -1,3 +1,9 @@
 {
-  "sites": {}
+  "sites": {
+    "my-site": {
+      "user": "sharcbloc749",
+      "repo": "my-site",
+      "updatedAt": "2026-10-04T13:48:41.508Z"
+    }
+  }
 }
