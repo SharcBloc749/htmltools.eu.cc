@@ -3,10 +3,10 @@
   "description": "this is a test repository",
   "visibility": "public",
   "createdAt": "2026-10-04T13:48:22.927Z",
-  "updatedAt": "2026-10-04T13:48:22.927Z",
+  "updatedAt": "2026-10-04T13:48:42.482Z",
   "defaultBranch": "main",
   "site": {
-    "enabled": false,
-    "subdomain": null
+    "enabled": true,
+    "subdomain": "my-site"
   }
 }
