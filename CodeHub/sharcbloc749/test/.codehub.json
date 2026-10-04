@@ -1,0 +1,12 @@
+{
+  "name": "test",
+  "description": "this is a test repository",
+  "visibility": "public",
+  "createdAt": "2026-10-04T13:38:17.037Z",
+  "updatedAt": "2026-10-04T13:38:17.037Z",
+  "defaultBranch": "main",
+  "site": {
+    "enabled": false,
+    "subdomain": null
+  }
+}
