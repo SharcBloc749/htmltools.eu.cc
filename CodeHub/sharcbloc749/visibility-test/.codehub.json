@@ -1,0 +1,17 @@
+{
+  "name": "visibility-test",
+  "description": "",
+  "visibility": "private",
+  "files": {
+    "index": "index.html",
+    "notFound": "404.html",
+    "readme": "README.md"
+  },
+  "createdAt": "2026-10-04T19:45:12.109Z",
+  "updatedAt": "2026-10-04T19:45:12.109Z",
+  "defaultBranch": "main",
+  "site": {
+    "enabled": false,
+    "subdomain": null
+  }
+}
