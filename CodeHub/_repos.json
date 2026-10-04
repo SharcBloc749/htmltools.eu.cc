@@ -1,0 +1,14 @@
+{
+  "repos": {
+    "sharcbloc749/test": {
+      "description": "this is a test repository",
+      "visibility": "public",
+      "createdAt": "2026-10-04T13:38:17.037Z",
+      "updatedAt": "2026-10-04T13:38:17.037Z",
+      "site": {
+        "enabled": false,
+        "subdomain": null
+      }
+    }
+  }
+}
