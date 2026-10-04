@@ -8,10 +8,10 @@
     "readme": "README.md"
   },
   "createdAt": "2026-10-04T19:45:12.109Z",
-  "updatedAt": "2026-10-04T19:47:23.648Z",
+  "updatedAt": "2026-10-04T19:47:39.966Z",
   "defaultBranch": "main",
   "site": {
-    "enabled": false,
-    "subdomain": null
+    "enabled": true,
+    "subdomain": "games"
   }
 }
