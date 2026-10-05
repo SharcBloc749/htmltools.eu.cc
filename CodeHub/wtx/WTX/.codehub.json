@@ -1,0 +1,17 @@
+{
+  "name": "WTX",
+  "description": "Game",
+  "visibility": "public",
+  "files": {
+    "index": "index.html",
+    "notFound": "404.html",
+    "readme": "README.md"
+  },
+  "createdAt": "2026-10-05T21:10:25.832Z",
+  "updatedAt": "2026-10-05T21:10:25.832Z",
+  "defaultBranch": "main",
+  "site": {
+    "enabled": false,
+    "subdomain": null
+  }
+}
