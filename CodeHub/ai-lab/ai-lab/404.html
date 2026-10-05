@@ -1,1 +1,58 @@
-<!doctype html><meta charset="utf-8"><title>AI Lab</title><script>const p=location.pathname;if(/^\/Chat\/[^/]+\/?$/.test(p)){fetch('/chat.html').then(r=>r.text()).then(t=>{document.open();document.write(t);document.close()},()=>location.replace('/'));}else location.replace('/');</script><p style="font:16px system-ui;padding:32px">Opening AI Lab…</p>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTMLTools AI Lab</title>
+  <style>
+    html,body{height:100%;margin:0}
+    body{display:grid;place-items:center;background:#f5f6f3;color:#181b18;font:15px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    .fallback{max-width:420px;padding:28px;text-align:center}
+    .fallback img{width:42px;height:42px;margin-bottom:14px;border:1px solid #dfe3dd;border-radius:10px;object-fit:cover}
+    h1{margin:0 0 8px;font-size:21px;letter-spacing:-.04em}
+    p{margin:0;color:#6e756e}
+    a{display:inline-block;margin-top:18px;padding:9px 12px;border-radius:6px;color:#fff;background:#181b18;text-decoration:none;font-size:12px;font-weight:700}
+  </style>
+</head>
+<body>
+  <main class="fallback" id="fallback">
+    <img src="https://htmltools.me/logo3.png" alt="HTMLTools">
+    <h1>Opening HTMLTools AI Lab…</h1>
+    <p>Loading your conversation room.</p>
+  </main>
+  <script>
+    (async function () {
+      const path = decodeURIComponent(location.pathname);
+      const match = path.match(/^\/Chat\/([^/]+)\/?$/i);
+
+      if (!match) {
+        location.replace('/');
+        return;
+      }
+
+      try {
+        const response = await fetch('/chat.html', { cache: 'no-store' });
+        if (!response.ok) throw new Error('chat.html could not be loaded');
+        const html = await response.text();
+
+        // Replace this 404 document with the real chat document while keeping
+        // the original /Chat/<room> URL in the address bar.
+        document.open();
+        document.write(html);
+        document.close();
+      } catch (error) {
+        // If the host does not serve chat.html yet, use the same app through
+        // its file URL and preserve the room ID in the query string.
+        location.replace('/chat.html?room=' + encodeURIComponent(match[1]));
+      }
+    })();
+  </script>
+  <noscript>
+    <div class="fallback">
+      <h1>JavaScript is required</h1>
+      <p>Enable JavaScript to open your HTMLTools AI Lab conversation.</p>
+      <a href="/">Go to HTMLTools AI Lab</a>
+    </div>
+  </noscript>
+</body>
+</html>
