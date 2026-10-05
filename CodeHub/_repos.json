@@ -19,6 +19,16 @@
         "enabled": true,
         "subdomain": "games"
       }
+    },
+    "wtx/WTX": {
+      "description": "Game",
+      "visibility": "public",
+      "createdAt": "2026-10-05T21:10:25.832Z",
+      "updatedAt": "2026-10-05T21:10:25.832Z",
+      "site": {
+        "enabled": false,
+        "subdomain": null
+      }
     }
   }
 }
