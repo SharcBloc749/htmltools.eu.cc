@@ -44,10 +44,10 @@
       "description": "",
       "visibility": "public",
       "createdAt": "2026-10-05T22:29:23.331Z",
-      "updatedAt": "2026-10-05T22:29:23.331Z",
+      "updatedAt": "2026-10-05T22:29:36.510Z",
       "site": {
-        "enabled": false,
-        "subdomain": null
+        "enabled": true,
+        "subdomain": "ai-lab"
       }
     }
   }
